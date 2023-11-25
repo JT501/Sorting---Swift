@@ -3,8 +3,8 @@
     <pages>
         <page name='Selection Sort'/>
         <page name='Bubble Sort'/>
+        <page name='Insertion Sort'/>
         <page name='Merge Sort'/>
         <page name='Quicksort'/>
-        <page name='Insertion Sort'/>
     </pages>
 </playground>

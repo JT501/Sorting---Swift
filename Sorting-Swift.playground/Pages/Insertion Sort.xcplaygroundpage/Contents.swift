@@ -11,6 +11,7 @@ func insertionSort(array: [Int]) -> [Int] {
         return array
     }
 
+    // the first substring (only one element) must be sorted, so can be skipped
     for i in 1 ..< length {
         for j in (1 ... i).reversed() {
             if array[j] < array[j - 1] {
