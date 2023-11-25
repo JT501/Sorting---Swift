@@ -6,5 +6,6 @@
         <page name='Insertion Sort'/>
         <page name='Merge Sort'/>
         <page name='Quicksort'/>
+        <page name='Counting Sort'/>
     </pages>
 </playground>
