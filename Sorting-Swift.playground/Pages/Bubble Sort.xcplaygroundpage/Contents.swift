@@ -1,7 +1,20 @@
-//: [Previous](@previous)
+func bubbleSort(array: [Int]) -> [Int] {
+    var array = array
+    let length = array.count
 
-import Foundation
+    guard length > 1 else { return array }
 
-var greeting = "Hello, playground"
+    for i in 0 ..< length {
+        for j in 1 ..< (length - i) {
+            if array[j] < array[j - 1] {
+                let temp = array[j]
+                array[j] = array[j - 1]
+                array[j - 1] = temp
+            }
+        }
+    }
 
-//: [Next](@next)
+    return array
+}
+
+bubbleSort(array: [3, 1, 4, 4, 8, 9])
