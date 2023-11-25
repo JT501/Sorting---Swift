@@ -1,4 +1,7 @@
-import Foundation
+/*
+ Time: O(n㏒(n))
+ Space: O(n)
+ */
 
 func mergesort(array: [Int]) -> [Int] {
     let length = array.count
@@ -8,6 +11,7 @@ func mergesort(array: [Int]) -> [Int] {
         return array
     }
     
+    // Divide
     let mid = length / 2
     
     var left = Array(array[..<mid])
@@ -16,6 +20,7 @@ func mergesort(array: [Int]) -> [Int] {
     left = mergesort(array: left)
     right = mergesort(array: right)
     
+    // Conquer
     return merge(a: left, b: right)
 }
 

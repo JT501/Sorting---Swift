@@ -1,3 +1,8 @@
+/*
+ Time: O(n²)
+ Space: O(1)
+ */
+
 func bubbleSort(array: [Int]) -> [Int] {
     var array = array
     let length = array.count
